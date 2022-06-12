@@ -12,7 +12,7 @@ public class kdvCalc {
         System.out.print("Tutari Giriniz : ");
         tutar = kdv.nextDouble();
 
-        // Eğer tutar 0 ila 1000 arasında ise kdv oranını 0.18 değilse 0.08 olması için karar mekanizması yazıyoruz. Daha sonra Toplam tutarı hesaplatıyoruz.
+        // Eğer tutar 0 ila 1000 arasında ise kdv oranını %18, değilse %8 olması için karar mekanizması yazıyoruz. Daha sonra Toplam tutarı hesaplatıyoruz.
 
         double kdvTutari = tutar > 0 && tutar < 1000 ? 0.18 * tutar : 0.08 * tutar;
 
@@ -22,7 +22,6 @@ public class kdvCalc {
 
         System.out.println();
         System.out.println("KDV Tutari : " + kdvTutari);
-        System.out.print("Toplam Odeyeceginiz Ucret : " + toplamTutar);
-        System.out.println();
+        System.out.println("Toplam Odeyeceginiz Ucret : " + toplamTutar);
     }
 }
